@@ -1,11 +1,13 @@
 from dataclasses import dataclass
 
 
-class GmailRecord(dataclass):
+@dataclass
+class GmailRecord:
     email: str
     password: str
 
 
-class TwitterRecord(dataclass):
-    email: str
+@dataclass
+class TwitterRecord:
+    username: str
     password: str
